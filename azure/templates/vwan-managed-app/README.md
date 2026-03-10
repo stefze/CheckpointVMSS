@@ -80,6 +80,6 @@ From the output, extract the desired image from the "availableVersions" section 
 Note: Do not use "latest"
 
 
-<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FCheckPointSW%2FCloudGuardIaaS%2Fmaster%2Fazure%2Ftemplates%2Fvwan-managed-app%2FmainTemplate.json">
+<a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fstefze%2FCheckpointVMSS%2Fmain%2Fazure%2Ftemplates%2Fvwan-managed-app%2FmainTemplate.json">
  <img src="https://aka.ms/deploytoazurebutton" alt="Deploy to Azure" />
 </a>

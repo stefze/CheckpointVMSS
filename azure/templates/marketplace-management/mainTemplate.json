@@ -264,7 +264,7 @@
     "_artifactsLocation": {
       "type": "string",
       "metadata": {
-        "description": "Use the following URI when deploying a custom template: https://raw.githubusercontent.com/stefze/CheckpointVMSS/master/azure/templates/"
+        "description": "Use the following URI when deploying a custom template: https://raw.githubusercontent.com/stefze/CheckpointVMSS/main/azure/templates/"
       },
       "defaultValue": "[deployment().properties.templateLink.uri]"
     },
@@ -1187,7 +1187,7 @@
     "nicPublicIpDependency": "[if(parameters('enableIpv6'), variables('publicIPAddressIdV6'), variables('publicIPAddressId'))]",
     "bootstrapScript64": "[base64(parameters('bootstrapScript'))]",
     "allowUploadDownload": "[parameters('allowDownloadFromUploadToCheckPoint')]",
-    "_artifactsLocation": "[if(contains(parameters('_artifactsLocation'),'raw.githubusercontent.com/stefze/CheckpointVMSS/master/azure/templates/marketplace'),'https://raw.githubusercontent.com/stefze/CheckpointVMSS/master/azure/templates/',parameters('_artifactsLocation'))]",
+    "_artifactsLocation": "[if(contains(parameters('_artifactsLocation'),'raw.githubusercontent.com/stefze/CheckpointVMSS/main/azure/templates/marketplace'),'https://raw.githubusercontent.com/stefze/CheckpointVMSS/main/azure/templates/',parameters('_artifactsLocation'))]",
     "networkSetupURL": "[uri(variables('_artifactsLocation'), concat('nestedtemplates/vnet-1-subnet-', parameters('vnetNewOrExisting'), '.json', parameters('_artifactsLocationSasToken')))]",
     "networkSetupURLDualstack": "[uri(variables('_artifactsLocation'), concat('nestedtemplates/vnet-1-subnet-dualstack-new.json', parameters('_artifactsLocationSasToken')))]",
     "managementGUIClientNetwork": "[parameters('managementGUIClientNetwork')]",

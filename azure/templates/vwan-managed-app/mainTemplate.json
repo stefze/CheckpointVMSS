@@ -234,7 +234,7 @@
     },
     "variables": {
         "managedResourceGroupId": "[concat(subscription().id, '/resourceGroups/', parameters('managedResourceGroupName'))]",
-        "_artifactsLocation": "https://raw.githubusercontent.com/stefze/CheckpointVMSS/master/azure/templates/",
+        "_artifactsLocation": "https://raw.githubusercontent.com/stefze/CheckpointVMSS/main/azure/templates/",
         "managed_identity_name": "[concat(resourceGroup().name, '-managed_app_identity')]",
         "public_ip_resource_group":"[if(equals(parameters('publicIPIngress'), 'yes'), if(equals(parameters('createNewIPIngress'), 'yes'), resourceGroup().name, split(parameters('ipIngressExistingResourceId'), '/')[4]),'')]"
     },
